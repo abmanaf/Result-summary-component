@@ -95,29 +95,7 @@ button {
   background-color: var(--Dark-gray-blue);
   color: var(--White);
 }
-/*
-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-width: 18rem;
-  min-height: 3rem;
-  background-color: var(--dark-cyan);
-  border: none;
-  color: var(--White);
-  font-size: 0.9rem;
-  line-height: auto;
-  font-weight: 700;
-  font-family: var(--font-Montserrat);
-  border-radius: 0.6rem;
-  cursor: pointer;
-}
 
-button:hover {
-  background-color: var(--deep-aquamarine);
-}
-*/
 table {
   border-collapse: collapse;
   width: 100%;
@@ -152,11 +130,6 @@ tr:nth-child(even) {
   .right-container {
     padding: 2rem;
   }
-  /*
-  button {
-    min-width: 15rem;
-  }
-*/
 
   h1 {
     margin-top: 1rem;
