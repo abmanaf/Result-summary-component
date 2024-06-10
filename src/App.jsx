@@ -32,9 +32,9 @@ function App() {
            {subject.map((data, index)=> (
              <tr key={index}>
               <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                <div>
-              <td><img src={data.icon} alt="alt={`${data.category} icon`}" /></td>
-              <td>{data.category}</td>
+                <div >
+              <td style={{display:'flex',alignItems: 'center'}}><img src={data.icon} alt="alt={`${data.category} icon`}" />
+              <span style={{marginLeft: '0.5em'}}>{data.category}</span></td>
               </div>
               <div>
               <td>{data.score} / 100</td>
