@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-fraunces);
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 :root {
@@ -18,8 +18,8 @@
   --Light-royal-blue: hsl(241, 81%, 54%);
   --Violet-blue: hsla(256, 72%, 46%, 1);
   --Persian-blue: hsla(241, 72%, 46%, 0);
-  --font-fraunces: "Hanken", serif;
-  --font-Montserrat: "Grotesk", sans-serif;
+  --font-fraunces: "Hanken Grotesk", sans-serif;
+  --font-Montserrat: "Hanken Grotesk", sans-serif;
 }
 
 body {
@@ -34,12 +34,12 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 21rem;
-  height: 43rem;
   background-color: var(--White);
   border-radius: 20px;
   box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
 h2 {
   text-align: center;
 }
@@ -50,6 +50,9 @@ h2 {
   text-align: center;
   color: var(--White);
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.header {
+  margin-top: 3em;
 }
 .left-container .score {
   display: flex;
@@ -68,9 +71,11 @@ h2 {
     hsla(241, 72%, 46%, 0)
   );
 }
+
 .score-message {
   font-size: 1em;
 }
+
 .right-container {
   border-radius: 0 10px 0 10px;
   padding: 1.5rem;
@@ -86,9 +91,10 @@ p {
   margin-top: 0.9rem;
   margin-bottom: 1.5rem;
 }
+
 button {
   width: 100%;
-  margin-top: 2.5em;
+  margin-top: 0.2em;
   padding: 0.8em;
   border-radius: 2em;
   cursor: pointer;
@@ -96,12 +102,46 @@ button {
   background-color: var(--Dark-gray-blue);
   color: var(--White);
 }
+
 button:hover {
   background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
+.red-color {
+  color: var(--Light-red);
+}
+
+.yellow-color {
+  color: #ffb629;
+}
+
+.green-color {
+  color: var(--Green-teal);
+}
+
+.violet-color {
+  color: var(--Light-royal-blue);
+}
+
+.red-background {
+  background-color: #fff6f5;
+}
+
+.yellow-background {
+  background-color: #fffbf2;
+}
+
+.green-background {
+  background-color: #f2fbfa;
+}
+
+.violet-background {
+  background-color: #f3f3fd;
+}
+
 table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 1em; /* This will create space between rows */
   width: 100%;
 }
 
@@ -110,9 +150,6 @@ td {
   padding: 17px;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 37.5rem;
@@ -123,14 +160,20 @@ tr:nth-child(even) {
   .left-container {
     width: 50%;
   }
+
   .left-container .score {
     width: 100px;
     height: 100px;
     padding: 5em;
   }
+
+  .header {
+    margin-top: 0;
+  }
   .score-message {
     font-size: 1.1em;
   }
+
   .right-container {
     padding: 2rem;
     width: 50%;
@@ -143,5 +186,9 @@ tr:nth-child(even) {
   p {
     margin-top: 1.5rem;
     margin-bottom: 1.8rem;
+  }
+
+  button {
+    margin-top: 2.5em;
   }
 }
