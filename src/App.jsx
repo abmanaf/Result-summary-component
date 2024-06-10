@@ -41,11 +41,13 @@ function App() {
             <tbody>
               {subject.map((data, index) => (
                 <tr key={index} className={rowClasses[index]}>
-                  <td className={semiRowClasses[index]} style={{ display: 'flex', alignItems: 'center', padding: '1rem' }}>
-                    <img src={data.icon} alt={`${data.category} icon`} style={{ marginRight: '0.5em' }} />
-                    <span>{data.category}</span>
-                  </td>
-                  <td style={{ padding: '1rem',fontWeight: '800' }}><strong style={{ opacity: '0.8'}}>{data.score}</strong> <span style={{opacity: '0.5'}}>/ 100</span></td>
+                  <div style={{display: 'flex', justifyContent:'space-between' }}>
+                    <td className={semiRowClasses[index]} style={{ display: 'flex', alignItems: 'center', padding: '1rem' }}>
+                      <img src={data.icon} alt={`${data.category} icon`} style={{ marginRight: '0.5em' }} />
+                      <span>{data.category}</span>
+                    </td>
+                    <td style={{ padding: '1rem',fontWeight: '800' }}><strong style={{ opacity: '0.8'}}>{data.score}</strong> <span style={{opacity: '0.5'}}>/ 100</span></td>
+                  </div>
                 </tr>
               ))}
             </tbody>
