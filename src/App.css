@@ -36,7 +36,8 @@ body {
   min-width: 21rem;
   background-color: var(--White);
   border-radius: 20px;
-  box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px 12px hsla(221, 100%, 96%, 0.6);
+
   overflow: hidden;
 }
 
@@ -161,7 +162,7 @@ td {
   }
 
   .left-container {
-    width: 50%;
+    width: 60%;
   }
 
   .left-container .score {
@@ -180,7 +181,7 @@ td {
 
   .right-container {
     padding: 2rem;
-    width: 50%;
+    width: 60%;
   }
 
   h1 {
