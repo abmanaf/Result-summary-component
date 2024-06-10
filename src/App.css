@@ -148,7 +148,9 @@ table {
   border-spacing: 0 1em;
   width: 100%;
 }
-
+tbody {
+  border: 3px solid red;
+}
 td {
   text-align: left;
   padding: 17px;
