@@ -24,13 +24,13 @@ function App() {
       <div className="container" style={{ width: '100%' }}>
         <div className='left-container'>
           <div className='sub-left-container' style={{ margin: "2em" }}>
-            <h3 className='header'>Your Result</h3>
-            <div className='score' style={{ borderRadius: '50%', textAlign: 'center', marginTop: '1em' }}>
+            <h3 className='header' style={{  opacity: '0.6'}}>Your Result</h3>
+            <div className='score' style={{ borderRadius: '50%', textAlign: 'center' }}>
               <span style={{ fontSize: '3em', fontWeight: '900' }}>76</span>
-              <span style={{ fontSize: '10px' }}>of 100</span>
+              <span style={{ fontSize: '10px',   opacity: '0.6'}}>of 100</span>
             </div>
             <div>
-              <h2 style={{ fontSize: '2em' }}>Great</h2>
+              <h2 style={{ fontSize: '2em', marginTop: '1em' }}>Great</h2>
               <p className='score-message'>You scored higher than 65% of the people who have taken these tests.</p>
             </div>
           </div>
