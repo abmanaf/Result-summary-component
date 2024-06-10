@@ -145,7 +145,7 @@ button:hover {
 
 table {
   border-collapse: separate;
-  border-spacing: 0 1em; /* This will create space between rows */
+  border-spacing: 0 1em;
   width: 100%;
 }
 
