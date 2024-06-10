@@ -1,53 +1,58 @@
 import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
 import './App.css'
 import { data } from '../data'
 
 function App() {
-  const [subject, setSubject ] = useState(data);
+  const [subject, setSubject] = useState(data);
+
+  const semiRowClasses = [
+    'red-color',
+    'yellow-color',
+    'green-color',
+    'violet-color'
+  ];
+  
+  const rowClasses = [
+    'red-background',
+    'yellow-background',
+    'green-background',
+    'violet-background'
+  ];
 
   return (
     <>
-      <div className="container" style={{width: '100%'}}>
-      <div className='left-container' >
-        <div className='sub-left-container' style={{margin: "2em"}}>
-          <h2>Your Result</h2>
-          <div className='score' style={{borderRadius: '50%', textAlign: 'center', marginTop: '1.5em'}}>
-            <span style={{fontSize: '2em', fontWeight: '900'}}>76</span>
-            <span style={{fontSize: '10px'}}>of 100</span>
-          </div>
-          <div>
-            <p>
-            <h2 style={{fontSize: '2em'}}>Great</h2>
-            </p>
-            <p className='score-message'>You scored higher than 65% of the people who have taken these tests.</p>
+      <div className="container" style={{ width: '100%' }}>
+        <div className='left-container'>
+          <div className='sub-left-container' style={{ margin: "2em" }}>
+            <h3 className='header'>Your Result</h3>
+            <div className='score' style={{ borderRadius: '50%', textAlign: 'center', marginTop: '1em' }}>
+              <span style={{ fontSize: '3em', fontWeight: '900' }}>76</span>
+              <span style={{ fontSize: '10px' }}>of 100</span>
+            </div>
+            <div>
+              <h2 style={{ fontSize: '2em' }}>Great</h2>
+              <p className='score-message'>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='right-container' >
-        <span className="product-name">Summary</span>
-        <table>
-          <tbody>
-           {subject.map((data, index)=> (
-             <tr key={index}>
-              <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                <div >
-              <td style={{display:'flex',alignItems: 'center'}}><img src={data.icon} alt="alt={`${data.category} icon`}" />
-              <span style={{marginLeft: '0.5em'}}>{data.category}</span></td>
-              </div>
-              <div>
-              <td>{data.score} / 100</td>
-              </div>
-              </div>
-              </tr>
-
-))}
+        <div className='right-container'>
+          <span className="product-name" style={{fontWeight: '800'}}>Summary</span>
+          <table>
+            <tbody>
+              {subject.map((data, index) => (
+                <tr key={index} className={rowClasses[index]}>
+                  <td className={semiRowClasses[index]} style={{ display: 'flex', alignItems: 'center', padding: '1rem' }}>
+                    <img src={data.icon} alt={`${data.category} icon`} style={{ marginRight: '0.5em' }} />
+                    <span>{data.category}</span>
+                  </td>
+                  <td style={{ padding: '1rem' }}>{data.score} / 100</td>
+                </tr>
+              ))}
             </tbody>
-        </table>
-        <button>
-          Add to Cart
-        </button>
+          </table>
+          <button style={{ padding: '0.8em', borderRadius: '2em', cursor: 'pointer', border: 'none', backgroundColor: 'var(--Dark-gray-blue)', color: 'var(--White)' }}>
+            Continue
+          </button>
         </div>
       </div>
     </>
