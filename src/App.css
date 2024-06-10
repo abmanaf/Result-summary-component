@@ -74,6 +74,7 @@ h2 {
 .right-container {
   border-radius: 0 10px 0 10px;
   padding: 1.5rem;
+  width: 100%;
 }
 
 p {
@@ -94,6 +95,9 @@ button {
   border: none;
   background-color: var(--Dark-gray-blue);
   color: var(--White);
+}
+button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 table {
@@ -129,6 +133,7 @@ tr:nth-child(even) {
   }
   .right-container {
     padding: 2rem;
+    width: 50%;
   }
 
   h1 {
