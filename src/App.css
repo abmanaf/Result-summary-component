@@ -130,25 +130,25 @@ button:hover {
 .red-background {
   background-color: #fff6f5;
   outline: 1px solid rgb(183, 181, 181);
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .yellow-background {
   background-color: #fffbf2;
   outline: 1px solid #dad4c4;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .green-background {
   background-color: #f2fbfa;
   outline: 1px solid #b8c8c6;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .violet-background {
   background-color: #f3f3fd;
   outline: 1px solid #c8c8e7;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 table {
