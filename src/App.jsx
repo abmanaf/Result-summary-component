@@ -45,7 +45,7 @@ function App() {
                     <img src={data.icon} alt={`${data.category} icon`} style={{ marginRight: '0.5em' }} />
                     <span>{data.category}</span>
                   </td>
-                  <td style={{ padding: '1rem' }}><strong style={{fontWeight: '800', opacity: '0.7'}}>{data.score}</strong> <span style={{opacity: '0.5'}}>/ 100</span></td>
+                  <td style={{ padding: '1rem',fontWeight: '800' }}><strong style={{ opacity: '0.8'}}>{data.score}</strong> <span style={{opacity: '0.5'}}>/ 100</span></td>
                 </tr>
               ))}
             </tbody>
