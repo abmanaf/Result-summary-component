@@ -19,6 +19,7 @@ function App() {
     'violet-background'
   ];
 
+  
   return (
     <>
       <div className="container" style={{ width: '100%' }}>
